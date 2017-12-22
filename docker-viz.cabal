@@ -1,0 +1,31 @@
+-- This file has been generated from package.yaml by hpack version 0.18.1.
+--
+-- see: https://github.com/sol/hpack
+
+name:           docker-viz
+version:        0.0.0.1
+synopsis:       Dockerfile inheritance visualizer
+category:       Development
+homepage:       https://github.com/yurrriq/docker-viz#readme
+bug-reports:    https://github.com/yurrriq/docker-viz/issues
+author:         Eric Bailey
+maintainer:     eric@ericb.me
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+source-repository head
+  type: git
+  location: https://github.com/yurrriq/docker-viz
+
+executable docker-viz
+  main-is: Main.hs
+  hs-source-dirs:
+      src
+  ghc-options: -Wall
+  build-depends:
+      base >=4.9 && <4.10
+    , language-dockerfile >=0.3.6 && <0.4
+    , turtle >=1.3 && <1.4
+  default-language: Haskell2010

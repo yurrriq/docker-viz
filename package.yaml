@@ -1,0 +1,19 @@
+name: docker-viz
+version: '0.0.0.1'
+synopsis: Dockerfile inheritance visualizer
+category: Development
+author: Eric Bailey
+maintainer: eric@ericb.me
+license: BSD3
+github: yurrriq/docker-viz
+dependencies:
+- base >=4.9 && <4.10
+- language-dockerfile >=0.3.6 && <0.4
+- turtle >=1.3 && <1.4
+
+ghc-options: -Wall
+
+executables:
+  docker-viz:
+    main: Main.hs
+    source-dirs: src
